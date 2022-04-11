@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import Slider from "react-slick";
 import tw from "twin.macro";
-import styled, { css } from "styled-components/macro"; //eslint-disable-line
+import styled from "styled-components";
+//eslint-disable-next-line
+import { css } from "styled-components/macro";
 import { ContentWithPaddingXl } from "../misc/Layouts.js";
 import { SectionHeading } from "../misc/Headings.js";
 
