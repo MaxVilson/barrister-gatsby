@@ -1,7 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
+import {HelmetDatoCms} from "gatsby-source-datocms";
 import "tailwindcss/dist/base.css";
 import '../assets/styles/index.css';
+import Seo from '../components/seo/Seo';
 import AnimationRevealPage from "../helpers/AnimationRevealPage.js";
 import Hero from "../components/hero/BackgroundAsImage.js";
 import Features from "../components/features/DashedBorderSixFeatures";
@@ -13,9 +15,10 @@ import ContactUsForm from "../components/forms/TwoColContactUsWithIllustration.j
 import ContactMap from "../components/contacts/ContactMap.js";
 import Footer from "../components/footers/MiniCenteredFooter.js";
 
-export default function Index({ data: { testimonials, posts } }) {
+export default function Index({ data: { testimonials, posts, site } }) {
   return (
     <AnimationRevealPage>
+      <Seo />
       <Hero />
       <Features />
       {/*<Cases posts={allPosts.nodes} />*/}

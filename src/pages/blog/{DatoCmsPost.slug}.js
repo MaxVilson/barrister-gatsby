@@ -13,6 +13,7 @@ const PostHeader = tw.h1`mb-[32px] leading-[40px] text-[32px] font-bold text-[rg
 const PostBody = tw.div`my-[32px] text-[20px] leading-[32px] text-[rgba(41, 41, 41, 1)]`
 
 export default function BlogPost({ data: { post } }) {
+  console.log(post)
   return (
     <AnimationRevealPage>
       <HelmetDatoCms seo={post.seo} />
