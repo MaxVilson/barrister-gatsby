@@ -1,38 +1,26 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {
-      colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
-      },
-      spacing: {
-        28: "7rem",
-      },
-      letterSpacing: {
-        tighter: "-.04em",
-      },
-      lineHeight: {
-        tight: 1.2,
-      },
-      fontSize: {
-        "5xl": "2.5rem",
-        "6xl": "2.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
-      },
-      boxShadow: {
-        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
-      },
+    mode: 'jit',
+    purge: ['./src/**/*.js', './public/index.html'],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+        fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            serif: ['"Roboto Slab"', 'serif'],
+            body: ['Roboto', 'sans-serif'],
+        },
+        extend: {
+            backgroundImage: () => ({
+                'login-background':
+                    "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1280.jpg')",
+                'landing-background':
+                    'linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80)',
+                'profile-background':
+                    "linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1080.jpg')",
+            }),
+        },
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [require("@tailwindcss/typography")],
+    variants: {
+        extend: {},
+    },
+    plugins: [],
 };

@@ -1,6 +1,7 @@
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+    twin: {
+        styled: "styled-components",
+        config: "./src/tailwind.config.js",
+        format: "auto"
+    }
+};

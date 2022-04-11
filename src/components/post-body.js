@@ -1,11 +1,15 @@
 import React from "react";
+import tw from "twin.macro";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { StructuredText } from "react-datocms";
 
+const Wrapper = tw.div`max-w-2xl mx-auto`
+const Post = tw.div``
+
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="prose prose-lg prose-blue">
+    <Wrapper>
+      <Post>
         <StructuredText
           data={content}
           renderBlock={({ record }) => {
@@ -20,7 +24,7 @@ export default function PostBody({ content }) {
             );
           }}
         />
-      </div>
-    </div>
+      </Post>
+    </Wrapper>
   );
 }

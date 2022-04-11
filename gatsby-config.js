@@ -2,7 +2,9 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Blog Demo",
+    title: "Адвокат Гуменюк Светлана Анатольевна",
+    description: "Адвокат по уголовным делам Гуменюк Светлана Анатольевна",
+    author: "Maxim Vavilkin"
   },
   plugins: [
     "gatsby-plugin-postcss",
