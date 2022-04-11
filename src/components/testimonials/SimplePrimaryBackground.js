@@ -7,7 +7,7 @@ import { SectionHeading } from "../misc/Headings.js";
 
 import "slick-carousel/slick/slick.css";
 
-const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 mb-16 lg:mb-24 bg-primary-800 text-gray-100`;
+const PrimaryBackgroundContainer = tw.div`relative -mx-8 px-8 mb-16 lg:mb-24 bg-primary-800 text-gray-100`;
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)`text-gray-200`;
