@@ -1,5 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
+import "tailwindcss/dist/base.css";
+import '../../assets/styles/index.css';
 import { StructuredText } from "react-datocms";
 import { graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";

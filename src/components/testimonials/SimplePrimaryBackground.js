@@ -2,15 +2,14 @@ import React, {useState} from "react";
 import Slider from "react-slick";
 import tw from "twin.macro";
 import styled, { css } from "styled-components/macro"; //eslint-disable-line
-import { Container, ContentWithPaddingXl } from "../misc/Layouts.js";
+import { ContentWithPaddingXl } from "../misc/Layouts.js";
 import { SectionHeading } from "../misc/Headings.js";
 
 import "slick-carousel/slick/slick.css";
 
-const PrimaryBackgroundContainer = tw.div`relative -mx-8 px-8 mb-16 lg:mb-24 bg-primary-800 text-gray-100`;
+const PrimaryBackgroundContainer = tw.div`relative -mx-8 px-8 mb-16 lg:mb-24 !bg-primary-800 text-gray-100`;
 
-const HeadingContainer = tw.div``;
-const Heading = tw(SectionHeading)`text-gray-200`;
+const Heading = styled(SectionHeading)`${tw`text-gray-200`}`;
 
 const TestimonialsSlider = styled(Slider)`
   ${tw`flex mt-8 mx-auto max-w-xs sm:max-w-xl lg:max-w-4xl text-left bg-gray-100 rounded-lg text-gray-900`}
@@ -45,9 +44,7 @@ export default ({ testimonials }) => {
   return (
     <PrimaryBackgroundContainer id="testimonials">
       <ContentWithPaddingXl>
-        <HeadingContainer>
-          <Heading>Отзывы</Heading>
-        </HeadingContainer>
+        <Heading>Отзывы</Heading>
         <TestimonialsSlider arrows={false} ref={setSliderRef}>
           {testimonials.map((testimonial, index) => (
             <Testimonial key={index}>
