@@ -1,6 +1,8 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+//eslint-disable-next-line
+import { css } from "styled-components/macro";
 import backgroundImage from "../../images/svetlana5.jpg";
 import ModalConsultation from "../modals/ModalConsultation"
 
