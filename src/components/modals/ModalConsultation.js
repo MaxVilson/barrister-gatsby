@@ -20,7 +20,8 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    width: '30%',
+    width: '90%',
+    maxWidth: '400px',
     transform: 'translate(-50%, -50%)',
   },
 };
