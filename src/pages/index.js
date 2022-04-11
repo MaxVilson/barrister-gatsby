@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { css } from "styled-components/macro"; //eslint-disable-line
 import {HelmetDatoCms} from "gatsby-source-datocms";
 import "tailwindcss/dist/base.css";
 import '../assets/styles/index.css';

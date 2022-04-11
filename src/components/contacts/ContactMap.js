@@ -1,6 +1,7 @@
 import React from "react"
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 import tw from "twin.macro";
+import { css } from "styled-components/macro"; //eslint-disable-line
 
 const Content = tw.div`pb-16 lg:pb-24`;
 
